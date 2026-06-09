@@ -39,7 +39,7 @@ def get_age() -> int:
 
 # ── Commit count ──────────────────────────────────────────────────────────────
 
-def get_commits_this_year(token: str | None) -> int:
+def get_commits_this_year(token: "str | None") -> int:
     """
     Uses GitHub GraphQL to fetch total commits contributed this year.
     Falls back to counting PushEvents from the REST events API (last ~90 days)
@@ -107,8 +107,8 @@ def update_readme(age: int, commits: int) -> None:
     with open(README_PATH, "r", encoding="utf-8") as f:
         content = f.read()
 
-    content = re.sub(r"<!-- AGE -->.*? ans", f"<!-- AGE --> {age} ans", content)
-    content = re.sub(r"<!-- COMMITS -->.*? commits", f"<!-- COMMITS --> {commits} commits", content)
+    content = re.sub(r"(\* Age: \.+ )\d+ ans", rf"\g<1>{age} ans", content)
+    content = re.sub(r"(\* Activity: \.+ )\d+ commits cette annee", rf"\g<1>{commits} commits cette annee", content)
 
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(content)

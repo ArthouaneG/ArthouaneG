@@ -17,8 +17,8 @@
   * Status: ................ Futur etudiant en Genie logiciel @ ETS
   * Previous: .............. DEC Techniques de l informatique (Cegep)
   * Certification: ......... Cisco CCNA3
-  * Age: ................... <!-- AGE --> ans
-  * Activity: .............. <!-- COMMITS --> commits cette annee
+  * Age: ................... 20 ans
+  * Activity: .............. 0 commits cette annee
   * Currently playing: ..... frenchcore - beats to code/study to
 
   -- Stack ---------------------------------------------------------------
