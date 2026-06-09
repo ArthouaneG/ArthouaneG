@@ -7,7 +7,7 @@
 </div>
 
 ```
-  (user@github)-[~]
+  (arthouane@github)-[~]
   # whoami
 ```
 
@@ -15,16 +15,17 @@
   -- Arthouane Gillekens ------------------------------------------------
 
   * Status: ................ Futur etudiant en Genie logiciel @ ETS
-  * Previous: .............. DEC Techniques de l'informatique (Cegep)
+  * Previous: .............. DEC Techniques de l informatique (Cegep)
   * Certification: ......... Cisco CCNA3
-  * Interests: ............. Embedded Systems, Audio, Mobile Dev
+  * Uptime: ................ 20 ans, quelques mois, trop de nuits blanches
+  * Currently playing: ..... lo-fi hip hop - beats to code/study to
 
   -- Stack ---------------------------------------------------------------
 
   * Embedded: .............. ESP32, Arduino, BLE / Wi-Fi
   * Mobile: ................ Android (Kotlin, Compose), Flutter
   * Languages: ............. C/C++, Kotlin, Python, C#, JavaScript
-  * Web: ................... HTML, CSS
+  * Web: ................... HTML, CSS, React, TailwindCSS
 
   -- Projects ------------------------------------------------------------
 
@@ -32,11 +33,19 @@
   * Android Soundboard ..... Kotlin/Compose app with Room database
   * BLE LED Controller ..... Remote LED control via Bluetooth Low Energy
 
-  -- Contact -------------------------------------------------------------
+  -- Frequencies I vibe at ----------------------------------------------
 
-  * Email: ................. arthouane.gillekens@gmail.com
-  * LinkedIn: .............. linkedin.com/in/arthouane-gillekens-629a86326
+  * 432 Hz ................. Deep focus, late-night debugging sessions
+  * 808 Hz ................. Bass drops when the build finally compiles
+  * 44100 Hz ............... Sample rate of a perfect commit
 
-  (user@github)-[~]
+  (arthouane@github)-[~]
   # _
 ```
+
+---
+
+**Contact**
+
+- **Email** -- [arthouane.gillekens@gmail.com](mailto:arthouane.gillekens@gmail.com)
+- **LinkedIn** -- [arthouane-gillekens](https://www.linkedin.com/in/arthouane-gillekens-629a86326)
