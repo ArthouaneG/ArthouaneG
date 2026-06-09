@@ -18,7 +18,7 @@
   * Previous: .............. DEC Techniques de l informatique (Cegep)
   * Certification: ......... Cisco CCNA3
   * Age: ................... 20 ans
-  * Activity: .............. 0 commits cette annee
+  * Activity: .............. 18 commits cette annee
   * Currently playing: ..... frenchcore - beats to code/study to
 
   -- Stack ---------------------------------------------------------------
