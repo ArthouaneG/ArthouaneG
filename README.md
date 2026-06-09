@@ -40,8 +40,7 @@
   * 808 Hz ................. Bass drops when the build finally compiles
   * 44100 Hz ............... Sample rate of a perfect commit
 
-  (arthouane@github)-[~]
-  # _
+ 
 ```
 
 ---
