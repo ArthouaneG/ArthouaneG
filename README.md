@@ -1,132 +1,42 @@
-
-```
-╔══════════════════════════════════════════════════════════════════════╗
-║                                                                      ║
-║  //==============================================================//  ║
-║                                                                      ║
-║     A R T H O U A N E   G I L L E K E N S                            ║
-║                                                                      ║
-║     << Embedded Systems  |  Music  |  Software Engineering >>        ║
-║                                                                      ║
-║     ~  .  ~  .  ~  .  ~  .  ~  .  ~  .  ~  .  ~  .  ~                ║
-║                                                                      ║
-╚══════════════════════════════════════════════════════════════════════╝
-```
-
 <div align="center">
 
-# Hi, I'm Arthouane Gillekens 👋
+# Arthouane Gillekens
 
-### 🎵 Music × Embedded Systems Enthusiast 🔌
+[![Email](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:arthouane.gillekens@gmail.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arthouane-gillekens-629a86326)
 
 </div>
 
----
-
 ```
-  AUDIO SIGNAL                        MCU HEARTBEAT
-  ┌─────────────────────────┐         ┌─────────────────────────┐
-  │  ∿∿∿∿∿   ∿∿∿∿∿          │         │  CLK  ┌─┐ ┌─┐ ┌─┐ ┌─┐  │
-  │       ∿∿∿     ∿∿∿       │  ──▶──  │       │ │ │ │ │ │ │ │  │
-  │  ▲ WAVEFORM              │         │       └─┘ └─┘ └─┘ └─┘  │
-  │  ♩ ♪ ♫ ♬ ♭ ♮ ♯          │         │  DATA ───┤ ESP32 ├───   │
-  └─────────────────────────┘         └─────────────────────────┘
+  (user@github)-[~]
+  # whoami
 ```
 
----
-
-## 🧑‍💻 About Me
-
-> Diplomé de  **Techniques de l'informatique** au Cégep — je me passionne par l'intersection entre le son, le code et le matériel embarqué.
-
-- � Futur étudiant en **Génie logiciel** à l'**École de Technologie Supérieure (ÉTS)**
-- �🎛️ Je construis des **systèmes audio embarqués** sur ESP32 / Arduino
-- 📱 Je développe des **applications Android** en Kotlin, Flutter & React Native
-- 🔊 Je m'intéresse à la **transmission audio sans fil** (BLE, Wi-Fi)
-- ⚡ J'aime faire parler le matériel et le logiciel dans la même langue
-- 🏅 Certifié **Cisco CCNA3** (Entreprise Networking, Security & Automation)
-
----
-
-## 🛠️ Tech Stack
-
 ```
-  ┌──────────────────────────────────────────────────────────────┐
-  │                                                              │
-  │   EMBEDDED          MOBILE             LANGUAGES            │
-  │   ─────────         ──────             ─────────            │
-  │   [ESP32  ]         [Android]          [C / C++  ]          │
-  │   [Arduino]         [Kotlin ]          [Kotlin   ]          │
-  │   [BLE/BT ]         [Compose]          [Python   ]          │
-  │                     [Flutter]           [Bash     ]          │
-  │                                        [C#       ]          │
-  │                                        [JavaScript]         │
-  │                                        [HTML / CSS]         │
-  │                                                              │
-  │   =──────────────────────────────────────────────=          │
-  │   ║  AUDIO PIPELINE                               ║          │
-  │   ║  Mic ──▶ ADC ──▶ ESP32 ──▶ BLE ──▶ Android  ║          │
-  │   =──────────────────────────────────────────────=          │
-  │                                                              │
-  └──────────────────────────────────────────────────────────────┘
-```
+  -- Arthouane Gillekens ------------------------------------------------
 
----
+  * Status: ................ Futur etudiant en Genie logiciel @ ETS
+  * Previous: .............. DEC Techniques de l'informatique (Cegep)
+  * Certification: ......... Cisco CCNA3
+  * Interests: ............. Embedded Systems, Audio, Mobile Dev
 
-## 🎵 Featured Projects
+  -- Stack ---------------------------------------------------------------
 
-```
-  ♪  ╔═══════════════════════════════════════════════════╗  ♪
-     ║  🔊  Audio Transmitter ESP                        ║
-     ║  ───────────────────────────────────────────────  ║
-     ║  Transmission audio en temps réel via BLE         ║
-     ║  entre un ESP32 et une application Android.        ║
-     ╚═══════════════════════════════════════════════════╝
+  * Embedded: .............. ESP32, Arduino, BLE / Wi-Fi
+  * Mobile: ................ Android (Kotlin, Compose), Flutter
+  * Languages: ............. C/C++, Kotlin, Python, C#, JavaScript
+  * Web: ................... HTML, CSS
 
-  ♫  ╔═══════════════════════════════════════════════════╗  ♫
-     ║  📱  Android Soundboard App                       ║
-     ║  ───────────────────────────────────────────────  ║
-     ║  Application Kotlin/Compose de gestion            ║
-     ║  d'effets sonores avec base de données Room.       ║
-     ╚═══════════════════════════════════════════════════╝
+  -- Projects ------------------------------------------------------------
 
-  ♬  ╔═══════════════════════════════════════════════════╗  ♬
-     ║  💡  BLE LED Controller                           ║
-     ║  ───────────────────────────────────────────────  ║
-     ║  Contrôle de LEDs à distance via Bluetooth        ║
-     ║  Low Energy depuis un appareil mobile.             ║
-     ╚═══════════════════════════════════════════════════╝
-```
+  * Audio Transmitter ESP .. Real-time audio over BLE, ESP32 -> Android
+  * Android Soundboard ..... Kotlin/Compose app with Room database
+  * BLE LED Controller ..... Remote LED control via Bluetooth Low Energy
 
----
+  -- Contact -------------------------------------------------------------
 
-## 📡 Contact
+  * Email: ................. arthouane.gillekens@gmail.com
+  * LinkedIn: .............. linkedin.com/in/arthouane-gillekens-629a86326
 
-```
-  ┌─────────────────────────────────────────────────────────┐
-  │                                                         │
-  │   [TX] ──────────────────────────────────────── [RX]   │
-  │                                                         │
-  │   ✉  arthouane.gillekens@gmail.com                      │
-  │                                                         │
-  │   🔗  linkedin.com/in/arthouane-gillekens-629a86326     │
-  │                                                         │
-  │   [TX] ──────────────────────────────────────── [RX]   │
-  │                                                         │
-  └─────────────────────────────────────────────────────────┘
-```
-
-<div align="center">
-
-[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:arthouane.gillekens@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arthouane-gillekens-629a86326)
-
-</div>
-
----
-
-```
-  ♩ ♪ ♫ ♬ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ♬ ♫ ♪ ♩
-        "Code that sounds good, hardware that listens."
-  ♩ ♪ ♫ ♬ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ♬ ♫ ♪ ♩
+  (user@github)-[~]
+  # _
 ```
