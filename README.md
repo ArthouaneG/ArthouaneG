@@ -17,7 +17,8 @@
   * Status: ................ Futur etudiant en Genie logiciel @ ETS
   * Previous: .............. DEC Techniques de l informatique (Cegep)
   * Certification: ......... Cisco CCNA3
-  * Uptime: ................ 20 ans, quelques mois, trop de nuits blanches
+  * Age: ................... <!-- AGE --> ans
+  * Activity: .............. <!-- COMMITS --> commits cette annee
   * Currently playing: ..... frenchcore - beats to code/study to
 
   -- Stack ---------------------------------------------------------------
