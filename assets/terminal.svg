@@ -3,9 +3,7 @@
     <style>
       .t { font-family: 'Courier New', Courier, monospace; font-size: 13px; }
 
-      /* Each line fades in at its scheduled delay */
       .line { opacity: 0; animation: appear 0s forwards; }
-
       @keyframes appear { to { opacity: 1; } }
 
       .l01 { animation-delay: 0.3s; }
@@ -33,165 +31,157 @@
       .l32 { animation-delay: 4.55s; }
       .l33 { animation-delay: 5.0s; }
 
-      /* Blinking cursor */
-      .cursor {
-        animation: blink 1s step-start 5.0s infinite;
-      }
-      @keyframes blink {
-        0%, 100% { opacity: 1; }
-        50%       { opacity: 0; }
-      }
+      /* Palette: #210B2C #55286F #BC96E6 #D8B4E2 #AE759F */
+      .p-prompt  { fill: #BC96E6; } /* Wisteria     — prompt, brackets   */
+      .p-section { fill: #D8B4E2; } /* Pink Orchid  — section names, values */
+      .p-accent  { fill: #AE759F; } /* Petal Pink   — # command, bullet * */
+      .p-key     { fill: #BC96E6; } /* Wisteria     — key labels           */
+      .p-dim     { fill: #55286F; } /* Velvet Orchid — dots, separators   */
+      .p-value   { fill: #D8B4E2; } /* Pink Orchid  — info values          */
 
-      /* Color classes */
-      .green  { fill: #3fb950; }
-      .blue   { fill: #58a6ff; }
-      .orange { fill: #f0883e; }
-      .white  { fill: #e6edf3; }
-      .gray   { fill: #c9d1d9; }
-      .dim    { fill: #484f58; }
-      .value  { fill: #79c0ff; }
-      .at     { fill: #8b949e; }
+      /* Cursor */
+      .cursor { fill: #BC96E6; animation: blink 1s step-start 5.0s infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
     </style>
   </defs>
 
   <!-- Terminal background -->
-  <rect width="750" height="660" rx="10" fill="#0d1117"/>
+  <rect width="750" height="660" rx="10" fill="#210B2C"/>
 
   <!-- Title bar -->
-  <rect width="750" height="32" rx="10" fill="#161b22"/>
-  <rect y="24" width="750" height="8" fill="#161b22"/>
+  <rect width="750" height="32" rx="10" fill="#2d1040"/>
+  <rect y="24" width="750" height="8" fill="#2d1040"/>
 
-  <!-- Window buttons -->
-  <circle cx="18" cy="16" r="6" fill="#ff5f57"/>
-  <circle cx="37" cy="16" r="6" fill="#febc2e"/>
-  <circle cx="56" cy="16" r="6" fill="#28c840"/>
+  <!-- Window buttons — palette colours -->
+  <circle cx="18" cy="16" r="6" fill="#AE759F"/>
+  <circle cx="37" cy="16" r="6" fill="#55286F"/>
+  <circle cx="56" cy="16" r="6" fill="#BC96E6"/>
 
   <!-- Window title -->
-  <text x="375" y="21" text-anchor="middle" class="t dim" font-size="11">arthouane — ~/github — zsh</text>
+  <text x="375" y="21" text-anchor="middle" class="t p-dim" font-size="11">arthouane — ~/github — zsh</text>
 
   <!-- ============================================================ -->
   <!-- TERMINAL CONTENT                                              -->
-  <!-- y = 55 + (line_index * 18)                                   -->
   <!-- ============================================================ -->
 
   <!-- L1 y=55 -->
   <text x="15" y="55" class="t line l01">
-    <tspan class="green">(arthouane</tspan><tspan class="at">@</tspan><tspan class="green">github)</tspan><tspan class="gray">-</tspan><tspan class="blue">[~]</tspan>
+    <tspan class="p-prompt">(arthouane</tspan><tspan class="p-dim">@</tspan><tspan class="p-prompt">github)</tspan><tspan class="p-dim">-</tspan><tspan class="p-prompt">[~]</tspan>
   </text>
 
   <!-- L2 y=73 -->
   <text x="15" y="73" class="t line l02">
-    <tspan class="orange"># </tspan><tspan class="white">whoami</tspan>
+    <tspan class="p-accent"># </tspan><tspan class="p-section">whoami</tspan>
   </text>
 
   <!-- L4 y=109 -->
   <text x="15" y="109" class="t line l04">
-    <tspan class="dim">  -- </tspan><tspan class="blue">Arthouane Gillekens</tspan><tspan class="dim"> ------------------------------------------------</tspan>
+    <tspan class="p-dim">  -- </tspan><tspan class="p-section">Arthouane Gillekens</tspan><tspan class="p-dim"> ------------------------------------------------</tspan>
   </text>
 
   <!-- L6 y=145 -->
   <text x="15" y="145" class="t line l06">
-    <tspan class="dim">  </tspan><tspan class="green">*</tspan><tspan class="gray"> Status: </tspan><tspan class="dim">................ </tspan><tspan class="value">Futur etudiant en Genie logiciel @ ETS</tspan>
+    <tspan class="p-dim">  </tspan><tspan class="p-accent">*</tspan><tspan class="p-key"> Status: </tspan><tspan class="p-dim">................ </tspan><tspan class="p-value">Futur etudiant en Genie logiciel @ ETS</tspan>
   </text>
 
   <!-- L7 y=163 -->
   <text x="15" y="163" class="t line l07">
-    <tspan class="dim">  </tspan><tspan class="green">*</tspan><tspan class="gray"> Previous: </tspan><tspan class="dim">.............. </tspan><tspan class="value">DEC Techniques de l informatique (Cegep)</tspan>
+    <tspan class="p-dim">  </tspan><tspan class="p-accent">*</tspan><tspan class="p-key"> Previous: </tspan><tspan class="p-dim">.............. </tspan><tspan class="p-value">DEC Techniques de l informatique (Cegep)</tspan>
   </text>
 
   <!-- L8 y=181 -->
   <text x="15" y="181" class="t line l08">
-    <tspan class="dim">  </tspan><tspan class="green">*</tspan><tspan class="gray"> Certification: </tspan><tspan class="dim">......... </tspan><tspan class="value">Cisco CCNA3</tspan>
+    <tspan class="p-dim">  </tspan><tspan class="p-accent">*</tspan><tspan class="p-key"> Certification: </tspan><tspan class="p-dim">......... </tspan><tspan class="p-value">Cisco CCNA3</tspan>
   </text>
 
   <!-- L9 y=199 -->
   <text x="15" y="199" class="t line l09">
-    <tspan class="dim">  </tspan><tspan class="green">*</tspan><tspan class="gray"> Age: </tspan><tspan class="dim">................... </tspan><tspan class="value">20 ans, quelques mois, et beaucoup de nuits blanches</tspan>
+    <tspan class="p-dim">  </tspan><tspan class="p-accent">*</tspan><tspan class="p-key"> Age: </tspan><tspan class="p-dim">................... </tspan><tspan class="p-value">20 ans, quelques mois, et beaucoup de nuits blanches</tspan>
   </text>
 
   <!-- L10 y=217 -->
   <text x="15" y="217" class="t line l10">
-    <tspan class="dim">  </tspan><tspan class="green">*</tspan><tspan class="gray"> Activity: </tspan><tspan class="dim">.............. </tspan><tspan class="value">30 commits cette annee</tspan>
+    <tspan class="p-dim">  </tspan><tspan class="p-accent">*</tspan><tspan class="p-key"> Activity: </tspan><tspan class="p-dim">.............. </tspan><tspan class="p-value">30 commits cette annee</tspan>
   </text>
 
   <!-- L11 y=235 -->
   <text x="15" y="235" class="t line l11">
-    <tspan class="dim">  </tspan><tspan class="green">*</tspan><tspan class="gray"> Currently playing: </tspan><tspan class="dim">..... </tspan><tspan class="value">frenchcore - beats to code/study to</tspan>
+    <tspan class="p-dim">  </tspan><tspan class="p-accent">*</tspan><tspan class="p-key"> Currently playing: </tspan><tspan class="p-dim">..... </tspan><tspan class="p-value">frenchcore - beats to code/study to</tspan>
   </text>
 
   <!-- L13 y=271 -->
   <text x="15" y="271" class="t line l13">
-    <tspan class="dim">  -- </tspan><tspan class="blue">Stack</tspan><tspan class="dim"> ---------------------------------------------------------------</tspan>
+    <tspan class="p-dim">  -- </tspan><tspan class="p-section">Stack</tspan><tspan class="p-dim"> ---------------------------------------------------------------</tspan>
   </text>
 
   <!-- L15 y=307 -->
   <text x="15" y="307" class="t line l15">
-    <tspan class="dim">  </tspan><tspan class="green">*</tspan><tspan class="gray"> Embedded: </tspan><tspan class="dim">.............. </tspan><tspan class="value">ESP32, Arduino, BLE / Wi-Fi</tspan>
+    <tspan class="p-dim">  </tspan><tspan class="p-accent">*</tspan><tspan class="p-key"> Embedded: </tspan><tspan class="p-dim">.............. </tspan><tspan class="p-value">ESP32, Arduino, BLE / Wi-Fi</tspan>
   </text>
 
   <!-- L16 y=325 -->
   <text x="15" y="325" class="t line l16">
-    <tspan class="dim">  </tspan><tspan class="green">*</tspan><tspan class="gray"> Mobile: </tspan><tspan class="dim">................ </tspan><tspan class="value">Android (Kotlin, Compose), Flutter</tspan>
+    <tspan class="p-dim">  </tspan><tspan class="p-accent">*</tspan><tspan class="p-key"> Mobile: </tspan><tspan class="p-dim">................ </tspan><tspan class="p-value">Android (Kotlin, Compose), Flutter</tspan>
   </text>
 
   <!-- L17 y=343 -->
   <text x="15" y="343" class="t line l17">
-    <tspan class="dim">  </tspan><tspan class="green">*</tspan><tspan class="gray"> Languages: </tspan><tspan class="dim">............. </tspan><tspan class="value">C/C++, Kotlin, Python, C#, JavaScript</tspan>
+    <tspan class="p-dim">  </tspan><tspan class="p-accent">*</tspan><tspan class="p-key"> Languages: </tspan><tspan class="p-dim">............. </tspan><tspan class="p-value">C/C++, Kotlin, Python, C#, JavaScript</tspan>
   </text>
 
   <!-- L18 y=361 -->
   <text x="15" y="361" class="t line l18">
-    <tspan class="dim">  </tspan><tspan class="green">*</tspan><tspan class="gray"> Web: </tspan><tspan class="dim">................... </tspan><tspan class="value">HTML, CSS, React, TailwindCSS</tspan>
+    <tspan class="p-dim">  </tspan><tspan class="p-accent">*</tspan><tspan class="p-key"> Web: </tspan><tspan class="p-dim">................... </tspan><tspan class="p-value">HTML, CSS, React, TailwindCSS</tspan>
   </text>
 
   <!-- L20 y=397 -->
   <text x="15" y="397" class="t line l20">
-    <tspan class="dim">  -- </tspan><tspan class="blue">Projects</tspan><tspan class="dim"> ------------------------------------------------------------</tspan>
+    <tspan class="p-dim">  -- </tspan><tspan class="p-section">Projects</tspan><tspan class="p-dim"> ------------------------------------------------------------</tspan>
   </text>
 
   <!-- L22 y=433 -->
   <text x="15" y="433" class="t line l22">
-    <tspan class="dim">  </tspan><tspan class="green">*</tspan><tspan class="gray"> Audio Transmitter ESP .. </tspan><tspan class="value">Real-time audio over BLE, ESP32 -&gt; Android</tspan>
+    <tspan class="p-dim">  </tspan><tspan class="p-accent">*</tspan><tspan class="p-key"> Audio Transmitter ESP .. </tspan><tspan class="p-value">Real-time audio over BLE, ESP32 -&gt; Android</tspan>
   </text>
 
   <!-- L23 y=451 -->
   <text x="15" y="451" class="t line l23">
-    <tspan class="dim">  </tspan><tspan class="green">*</tspan><tspan class="gray"> Android Soundboard ..... </tspan><tspan class="value">Kotlin/Compose app with Room database</tspan>
+    <tspan class="p-dim">  </tspan><tspan class="p-accent">*</tspan><tspan class="p-key"> Android Soundboard ..... </tspan><tspan class="p-value">Kotlin/Compose app with Room database</tspan>
   </text>
 
   <!-- L24 y=469 -->
   <text x="15" y="469" class="t line l24">
-    <tspan class="dim">  </tspan><tspan class="green">*</tspan><tspan class="gray"> BLE LED Controller ..... </tspan><tspan class="value">Remote LED control via Bluetooth Low Energy</tspan>
+    <tspan class="p-dim">  </tspan><tspan class="p-accent">*</tspan><tspan class="p-key"> BLE LED Controller ..... </tspan><tspan class="p-value">Remote LED control via Bluetooth Low Energy</tspan>
   </text>
 
   <!-- L26 y=505 -->
   <text x="15" y="505" class="t line l26">
-    <tspan class="dim">  -- </tspan><tspan class="blue">Frequencies I vibe at</tspan><tspan class="dim"> ----------------------------------------------</tspan>
+    <tspan class="p-dim">  -- </tspan><tspan class="p-section">Frequencies I vibe at</tspan><tspan class="p-dim"> ----------------------------------------------</tspan>
   </text>
 
   <!-- L28 y=541 -->
   <text x="15" y="541" class="t line l28">
-    <tspan class="dim">  </tspan><tspan class="green">*</tspan><tspan class="gray"> 432 Hz </tspan><tspan class="dim">................. </tspan><tspan class="value">Deep focus, late-night debugging sessions</tspan>
+    <tspan class="p-dim">  </tspan><tspan class="p-accent">*</tspan><tspan class="p-key"> 432 Hz </tspan><tspan class="p-dim">................. </tspan><tspan class="p-value">Deep focus, late-night debugging sessions</tspan>
   </text>
 
   <!-- L29 y=559 -->
   <text x="15" y="559" class="t line l29">
-    <tspan class="dim">  </tspan><tspan class="green">*</tspan><tspan class="gray"> 808 Hz </tspan><tspan class="dim">................. </tspan><tspan class="value">Bass drops when the build finally compiles</tspan>
+    <tspan class="p-dim">  </tspan><tspan class="p-accent">*</tspan><tspan class="p-key"> 808 Hz </tspan><tspan class="p-dim">................. </tspan><tspan class="p-value">Bass drops when the build finally compiles</tspan>
   </text>
 
   <!-- L30 y=577 -->
   <text x="15" y="577" class="t line l30">
-    <tspan class="dim">  </tspan><tspan class="green">*</tspan><tspan class="gray"> 44100 Hz </tspan><tspan class="dim">............... </tspan><tspan class="value">Sample rate of a perfect commit</tspan>
+    <tspan class="p-dim">  </tspan><tspan class="p-accent">*</tspan><tspan class="p-key"> 44100 Hz </tspan><tspan class="p-dim">............... </tspan><tspan class="p-value">Sample rate of a perfect commit</tspan>
   </text>
 
   <!-- L32 y=613 -->
   <text x="15" y="613" class="t line l32">
-    <tspan class="green">(arthouane</tspan><tspan class="at">@</tspan><tspan class="green">github)</tspan><tspan class="gray">-</tspan><tspan class="blue">[~]</tspan>
+    <tspan class="p-prompt">(arthouane</tspan><tspan class="p-dim">@</tspan><tspan class="p-prompt">github)</tspan><tspan class="p-dim">-</tspan><tspan class="p-prompt">[~]</tspan>
   </text>
 
-  <!-- L33 y=631 — cursor -->
+  <!-- L33 y=631 -->
   <text x="15" y="631" class="t line l33">
-    <tspan class="orange"># </tspan><tspan class="green cursor">█</tspan>
+    <tspan class="p-accent"># </tspan><tspan class="cursor">█</tspan>
   </text>
 
 </svg>
