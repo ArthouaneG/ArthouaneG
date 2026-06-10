@@ -6,7 +6,7 @@
 
 </div>
 
-<img src="assets/terminal.svg" alt="Terminal profile" width="100%"/>
+![Terminal profile](https://raw.githubusercontent.com/ArthouaneG/ArthouaneG/main/assets/terminal.svg)
 
 ---
 
